@@ -34,7 +34,7 @@ export const LOCKFILE_VERSION = 1;
 export const NETWORK_CONCURRENCY = 16;
 
 // max amount of child processes to execute concurrently
-export const CHILD_CONCURRENCY = 5;
+export const CHILD_CONCURRENCY = process.env.CHILD_CONCURRENCY || 5;
 
 export const REQUIRED_PACKAGE_KEYS = ['name', 'version', '_uid'];
 
